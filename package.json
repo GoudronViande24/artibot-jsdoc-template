@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/GoudronViande24/artibot-jsdoc-template#readme",
   "dependencies": {
+    "common-path-prefix": "^3.0.0",
     "jsdoc": "^3.6.10"
   }
 }
