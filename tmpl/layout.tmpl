@@ -8,6 +8,8 @@
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="shortcut icon" href="https://assets.artivain.com/fav/bots/artibot.svg" type="image/svg+xml">
+
 	<!-- The page supports both dark and light color schemes, and the default is light. -->
 	<meta name="color-scheme" content="light dark">
 
@@ -35,18 +37,18 @@
 
 <body>
 
-	<div id="main">
+	<nav id="nav" class="sidebar">
+		<?js= this.nav ?>
+	</nav>
 
-		<h1 class="page-title">
+	<div id="container" class="content">
+
+		<h1>
 			<?js= title ?>
 		</h1>
 
 		<?js= content ?>
 	</div>
-
-	<nav>
-		<?js= this.nav ?>
-	</nav>
 
 	<br class="clear">
 
@@ -54,6 +56,7 @@
 		Documentation made with <a href="https://github.com/jsdoc/jsdoc">JSDoc
 			<?js= env.version.number ?>
 		</a>
+		<br>
 		Generated on
 		<?js= (new Date()) ?>
 	</footer>
