@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GoudronViande24/artibot-jsdoc-template/issues"
   },
-  "homepage": "https://github.com/GoudronViande24/artibot-jsdoc-template#readme"
+  "homepage": "https://github.com/GoudronViande24/artibot-jsdoc-template#readme",
+  "dependencies": {
+    "jsdoc": "^3.6.10"
+  }
 }
