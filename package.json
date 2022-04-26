@@ -1,0 +1,19 @@
+{
+  "name": "artibot-jsdoc-template",
+  "version": "1.0.0",
+  "description": "jsdoc template for the Artibot",
+  "main": "publish.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoudronViande24/artibot-jsdoc-template.git"
+  },
+  "author": "GoudronViande24",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GoudronViande24/artibot-jsdoc-template/issues"
+  },
+  "homepage": "https://github.com/GoudronViande24/artibot-jsdoc-template#readme"
+}
