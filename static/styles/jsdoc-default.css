@@ -25,3 +25,9 @@
 		padding-top: 0;
 	}
 }
+
+.logo {
+	max-height: 200px;
+	padding-bottom: 20px;
+	max-width: 100%;
+}
