@@ -10,7 +10,6 @@
 
 .content {
 	margin-left: 400px;
-	padding-top: 100px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -22,12 +21,15 @@
 
 	.content {
 		margin-left: inherit;
-		padding-top: 0;
 	}
 }
 
 .logo {
 	max-height: 200px;
 	padding-bottom: 20px;
+	max-width: 100%;
+}
+
+img {
 	max-width: 100%;
 }

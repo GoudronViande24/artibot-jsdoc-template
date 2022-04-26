@@ -39,25 +39,29 @@
 
 	<nav id="nav" class="sidebar p-3 text-white bg-dark">
 		<div class="sidebar-content">
-			<img src="https://assets.artivain.com/fav/bots/artibot.svg" alt="logo" class="logo">
-			<h2>Artibot</h2>
+			<div class="w-100 text-center">
+				<img src="https://assets.artivain.com/fav/bots/artibot.svg" alt="logo" class="logo">
+				<h2>Artibot</h2>
+			</div>
 			<?js= this.nav ?>
 		</div>
 	</nav>
 
 	<div class="content">
 
-		<div class="container bg-dark">
-			<h1>
-				<?js= title ?>
-			</h1>
+		<div class="title-bar bg-dark">
+			<div class="container">
+				<h1>
+					<?js= title ?>
+				</h1>
+			</div>
 		</div>
 
 		<div class="container">
 			<?js= content ?>
 		</div>
 
-		<footer class="mt-5 py-3 bd-dark">
+		<footer class="mt-5 py-3 bg-dark">
 			<div class="footer-content container">
 				Documentation made with <a href="https://github.com/jsdoc/jsdoc">JSDoc
 					<?js= env.version.number ?>
@@ -73,7 +77,7 @@
 		Date.prototype.today = () => {
 			return ((this.getDate() < 10) ? "0" : "") + this.getDate() + "/" + (((this.getMonth() + 1) < 10) ? "0" : "") + (this.getMonth() + 1) + "/" + this.getFullYear();
 		};
-		const date = <?js= (new Date()) ?>;
+		const date = new Date("<?js= (new Date()) ?>");
 		document.getElementById("generation-date").innerText = date.today();
 	</script>
 
