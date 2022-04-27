@@ -64,3 +64,7 @@ img {
 .menu a:hover {
 	color: var(--bs-primary);
 }
+
+.subsection-title {
+	margin-top: 4em;
+}
