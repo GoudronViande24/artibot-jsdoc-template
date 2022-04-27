@@ -93,6 +93,502 @@
 		</div>
 
 		<div class="container">
+
+			<table class="params">
+				<thead>
+				<tr>
+						
+						<th>Name</th>
+						
+		
+						<th>Type</th>
+		
+						
+		
+						
+		
+						<th class="last">Description</th>
+				</tr>
+				</thead>
+		
+				<tbody>
+				
+		
+						<tr>
+								
+										<td class="name"><code>config</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">Object</span>
+		
+		
+								
+								</td>
+		
+								
+		
+								
+		
+								<td class="description last"><p>Configuration for Artibot</p>
+										<h6>Properties</h6>
+										
+		
+		<table class="table">
+				<thead>
+				<tr>
+						
+						<th>Name</th>
+						
+		
+						<th>Type</th>
+		
+						
+						<th>Attributes</th>
+						
+		
+						
+						<th>Default</th>
+						
+		
+						<th class="last">Description</th>
+				</tr>
+				</thead>
+		
+				<tbody>
+				
+		
+						<tr>
+								
+										<td class="name"><code>ownerId</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">Snowflake</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+										</td>
+								
+		
+								<td class="description last"><p>Discord ID of the owner of the bot</p></td>
+						</tr>
+		
+				
+		
+						<tr>
+								
+										<td class="name"><code>testGuildId</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">Snowflake</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+										</td>
+								
+		
+								<td class="description last"><p>Discord ID of the testing guild</p></td>
+						</tr>
+		
+				
+		
+						<tr>
+								
+										<td class="name"><code>botName</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">string</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+												&lt;optional&gt;<br>
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+												"Artibot"
+										
+										</td>
+								
+		
+								<td class="description last"><p>Name of the Discord bot. Used almost everywhere.</p></td>
+						</tr>
+		
+				
+		
+						<tr>
+								
+										<td class="name"><code>botIcon</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">string</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+												&lt;optional&gt;<br>
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+												"https://assets.artivain.com/fav/bots/artibot-512.jpg"
+										
+										</td>
+								
+		
+								<td class="description last"><p>URL of the profile picture of the bot</p></td>
+						</tr>
+		
+				
+		
+						<tr>
+								
+										<td class="name"><code>prefix</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">string</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+												&lt;optional&gt;<br>
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+												"ab "
+										
+										</td>
+								
+		
+								<td class="description last"><p>Prefix for the commands</p></td>
+						</tr>
+		
+				
+		
+						<tr>
+								
+										<td class="name"><code>devMode</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">boolean</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+												&lt;optional&gt;<br>
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+												true
+										
+										</td>
+								
+		
+								<td class="description last"><p>Set to false if the bot must be used in more than one server. Interactions could take more time to refresh.</p></td>
+						</tr>
+		
+				
+		
+						<tr>
+								
+										<td class="name"><code>lang</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">string</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+												&lt;optional&gt;<br>
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+												"en"
+										
+										</td>
+								
+		
+								<td class="description last"><p>Set the lang of the bot</p></td>
+						</tr>
+		
+				
+		
+						<tr>
+								
+										<td class="name"><code>embedColor</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">string</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+												&lt;optional&gt;<br>
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+												"#06476d"
+										
+										</td>
+								
+		
+								<td class="description last"><p>Color for the embeds sent by the bot</p></td>
+						</tr>
+		
+				
+		
+						<tr>
+								
+										<td class="name"><code>advancedCorePing</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">boolean</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+												&lt;optional&gt;<br>
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+												true
+										
+										</td>
+								
+		
+								<td class="description last"><p>Set to false if you want to hide advanced infos from ping commands</p></td>
+						</tr>
+		
+				
+		
+						<tr>
+								
+										<td class="name"><code>checkForUpdates</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">boolean</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+												&lt;optional&gt;<br>
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+												true
+										
+										</td>
+								
+		
+								<td class="description last"><p>Set to false if you don't want the bot to check for new updates</p></td>
+						</tr>
+		
+				
+		
+						<tr>
+								
+										<td class="name"><code>debug</code></td>
+								
+		
+								<td class="type">
+								
+										
+		<span class="param-type">boolean</span>
+		
+		
+								
+								</td>
+		
+								
+										<td class="attributes">
+										
+												&lt;optional&gt;<br>
+										
+		
+										
+		
+										
+										</td>
+								
+		
+								
+										<td class="default">
+										
+												false
+										
+										</td>
+								
+		
+								<td class="description last"><p>Set to true to show debug messages in console</p></td>
+						</tr>
+		
+				
+				</tbody>
+		</table>
+		
+								</td>
+						</tr>
+		
+				
+				</tbody>
+		</table>
 			very long content<br>
 			very long content<br>
 			very long content<br>
@@ -223,6 +719,12 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous"></script>
+
+		<script>
+			document.querySelectorAll("table").forEach(table => {
+				table.classList.add("table");
+			});
+		</script>
 </body>
 
 </html>

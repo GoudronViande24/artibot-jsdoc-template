@@ -84,6 +84,12 @@
 		document.getElementById("year").innerText = new Date().getFullYear();
 	</script>
 
+	<script>
+		document.querySelectorAll("table").forEach(table => {
+			table.classList.add("table");
+		});
+	</script>
+
 	<script> prettyPrint(); </script>
 	<script src="scripts/linenumber.js"></script>
 </body>
