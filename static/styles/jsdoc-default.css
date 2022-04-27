@@ -68,3 +68,8 @@ img {
 .subsection-title {
 	margin-top: 2rem;
 }
+
+.signature-attributes {
+	font-size: .5em;
+	color: var(--bs-gray);
+}
