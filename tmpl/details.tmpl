@@ -39,9 +39,9 @@ if (data.defaultvalue && (data.defaultvaluetype === 'object' || data.defaultvalu
 
     <?js if (data.overrides) { ?>
     <p class="tag-overrides">Overrides:</p>
-    <p class="tag-overrides"><ul class="dummy"><li>
+    <p class="tag-overrides">
         <?js= this.linkto(data.overrides, this.htmlsafe(data.overrides)) ?>
-    </li></ul></p>
+    </p>
     <?js } ?>
 
     <?js if (data.implementations && data.implementations.length) { ?>
@@ -73,29 +73,26 @@ if (data.defaultvalue && (data.defaultvaluetype === 'object' || data.defaultvalu
     <?js } ?>
 
     <?js if (data.deprecated) { ?>
-        <p class="important tag-deprecated">Deprecated:</p><?js
-            if (data.deprecated === true) { ?><p class="yes-def tag-deprecated"><ul class="dummy"><li>Yes</li></ul></p><?js }
-            else { ?><p><ul class="dummy"><li><?js= data.deprecated ?></li></ul></p><?js }
-        ?>
+        <p class="text-warning tag-deprecated">Deprecated</p>
     <?js } ?>
 
     <?js if (data.copyright) {?>
     <p class="tag-copyright">Copyright:</p>
-    <p class="tag-copyright"><ul class="dummy"><li><?js= copyright ?></li></ul></p>
+    <p class="tag-copyright"><?js= copyright ?></p>
     <?js } ?>
 
     <?js if (data.defaultvalue) {?>
     <p class="tag-default">Default Value:</p>
-    <p class="tag-default"><ul class="dummy">
-            <li<?js= defaultObjectClass ?>><?js= data.defaultvalue ?></li>
-        </ul></p>
+    <p class="tag-default">
+            <?js= defaultObjectClass ?>><?js= data.defaultvalue ?>
+        </p>
     <?js } ?>
 
     <?js if (data.meta && self.outputSourceFiles) {?>
     <p class="tag-source">Source:</p>
-    <p class="tag-source"><ul class="dummy"><li>
+    <p class="tag-source">
         <?js= self.linkto(meta.shortpath) ?>, <?js= self.linkto(meta.shortpath, 'line ' + meta.lineno, null, 'line' + meta.lineno) ?>
-    </li></ul></p>
+    </p>
     <?js } ?>
 
     <?js if (data.tutorials && tutorials.length) {?>
