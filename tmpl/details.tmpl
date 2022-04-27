@@ -31,15 +31,13 @@ if (data.defaultvalue && (data.defaultvaluetype === 'object' || data.defaultvalu
     <?js } ?>
 
     <?js if (data.inherited && data.inherits && !data.overrides) { ?>
-    <p class="inherited-from">Inherited From:</p>
-    <p class="inherited-from">
+    <p class="inherited-from">Inherited From:
         <?js= this.linkto(data.inherits, this.htmlsafe(data.inherits)) ?>
     </p>
     <?js } ?>
 
     <?js if (data.overrides) { ?>
-    <p class="tag-overrides">Overrides:</p>
-    <p class="tag-overrides">
+    <p class="tag-overrides">Overrides:
         <?js= this.linkto(data.overrides, this.htmlsafe(data.overrides)) ?>
     </p>
     <?js } ?>
@@ -77,20 +75,17 @@ if (data.defaultvalue && (data.defaultvaluetype === 'object' || data.defaultvalu
     <?js } ?>
 
     <?js if (data.copyright) {?>
-    <p class="tag-copyright">Copyright:</p>
-    <p class="tag-copyright"><?js= copyright ?></p>
+    <p class="tag-copyright">Copyright:<?js= copyright ?></p>
     <?js } ?>
 
     <?js if (data.defaultvalue) {?>
-    <p class="tag-default">Default Value:</p>
-    <p class="tag-default">
+    <p class="tag-default">Default Value:
             <?js= defaultObjectClass ?>><?js= data.defaultvalue ?>
         </p>
     <?js } ?>
 
     <?js if (data.meta && self.outputSourceFiles) {?>
-    <p class="tag-source">Source:</p>
-    <p class="tag-source">
+    <p class="tag-source">Source:
         <?js= self.linkto(meta.shortpath) ?>, <?js= self.linkto(meta.shortpath, 'line ' + meta.lineno, null, 'line' + meta.lineno) ?>
     </p>
     <?js } ?>
