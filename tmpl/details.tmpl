@@ -100,11 +100,16 @@ if (data.defaultvalue && (data.defaultvaluetype === 'object' || data.defaultvalu
     <?js } ?>
 
     <?js if (data.see && see.length) {?>
-    <p class="tag-see">See:</p>
-    <p class="tag-see">
-        <ul><?js see.forEach(function(s) { ?>
-            <li><?js= self.linkto(s) ?></li>
-        <?js }); ?></ul>
+    <p class="tag-see">See:
+			<?js if (see.length > 1) { ?>
+				</p>
+				<p class="tag-see">
+						<ul><?js see.forEach(function(s) { ?>
+								<li><?js= self.linkto(s) ?></li>
+						<?js }); ?></ul>
+			<?js } else { ?>
+				<?js= self.linkto(see[0]) ?>
+			<?js } ?>
     </p>
     <?js } ?>
 
