@@ -81,23 +81,9 @@ if (data.defaultvalue && (data.defaultvaluetype === 'object' || data.defaultvalu
         ?>
     <?js } ?>
 
-    <?js if (data.author && author.length) {?>
-    <dt class="tag-author">Author:</dt>
-    <dd class="tag-author">
-        <ul><?js author.forEach(function(a) { ?>
-            <li><?js= self.resolveAuthorLinks(a) ?></li>
-        <?js }); ?></ul>
-    </dd>
-    <?js } ?>
-
     <?js if (data.copyright) {?>
     <dt class="tag-copyright">Copyright:</dt>
     <dd class="tag-copyright"><ul class="dummy"><li><?js= copyright ?></li></ul></dd>
-    <?js } ?>
-
-    <?js if (data.license) {?>
-    <dt class="tag-license">License:</dt>
-    <dd class="tag-license"><ul class="dummy"><li><?js= license ?></li></ul></dd>
     <?js } ?>
 
     <?js if (data.defaultvalue) {?>
