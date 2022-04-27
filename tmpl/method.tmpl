@@ -29,7 +29,7 @@ var self = this;
 <?js } ?>
 
 <?js if (kind === 'event' && data.type && data.type.names) {?>
-    <h5>Type: <?js= self.partial('type.tmpl', data.type.names) ?></h5>
+    <p>Type: <?js= self.partial('type.tmpl', data.type.names) ?></p>
 <?js } ?>
 
 <?js if (data['this']) { ?>
