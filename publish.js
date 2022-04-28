@@ -184,7 +184,7 @@ function addSignatureReturns(f) {
 function addSignatureTypes(f) {
 	const types = f.type ? buildItemTypeStrings(f) : [];
 
-	f.signature = `${f.signature || ''}<span class="type-signature">${types.length ? ` :${types.join('|')}` : ''}</span>`;
+	f.signature = `${f.signature || ''}<span class="type-signature">${types.length ? `: ${types.join('|')}` : ''}</span>`;
 }
 
 function addAttribs(f) {
